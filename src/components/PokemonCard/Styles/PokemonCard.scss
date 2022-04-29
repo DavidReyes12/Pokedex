@@ -1,0 +1,163 @@
+@import "./variables.scss";
+@import "../../../scss/variables.scss";
+
+.PokemonCard {
+    display: $flex;
+    justify-content: $custom_align;
+    align-items: $custom_align;
+    flex-direction: column;
+}
+
+.CardName {
+    background: $custom_background;
+    width: $custom_width;
+    display: $flex;
+    justify-content: $custom_align;
+    align-items: $custom_align;
+    font-size: larger;
+    font-family: cursive;
+    font-weight: bold;
+    height: 3rem;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 1rem;
+}
+
+.CardImg {
+    width: $custom_width;
+    display: $flex;
+    align-items: $custom_align;
+    justify-content: $custom_align;
+    background: $custom_background;
+}
+
+.Img {
+    background: #e6e7e7;
+    padding: 2rem 32%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.CardInfo {
+    width: $custom_width;
+    background: $custom_background;
+    display: $flex;
+    justify-content: $custom_align;
+    align-items: baseline;
+}
+
+.TitleInfo {
+    margin-right: 0.7rem;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.Types {
+    margin: 0rem 0.7rem;
+}
+
+.CardFooter {
+    width: $custom_width;
+    background: $custom_background;
+    justify-content: $custom_align;
+    display: $flex;
+    padding: 1rem 0rem;
+    align-items: baseline;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+//media query
+@media (max-width: $breakpoint_mobileL) {
+
+    .CardName {
+        width: $custom_width_mobile;
+    }
+    
+    .CardImg {
+        width: $custom_width_mobile;
+    }
+    
+    .Img {
+        padding: 2rem 30%;  
+    }
+    
+    .CardInfo {
+        width: $custom_width_mobile;
+        display: block;
+    }
+    
+    .TitleInfo {
+        font-weight: bold;
+        margin: 1rem 0.7rem 0rem 10%;
+    }
+    
+    .Types {
+        margin: 0rem 15%;
+    }
+    
+    .CardFooter {
+        width: $custom_width_mobile;
+        display: block;
+    }
+  
+}
+
+@media (min-width: $breakpoint_mobileL) and (max-width: $breakpoint_tablet) {
+
+    .CardName {
+        width: $custom_width_tablet;
+    }
+    
+    .CardImg {
+        width: $custom_width_tablet;
+    }
+    
+    .CardInfo {
+        width: $custom_width_tablet;
+    }
+    
+    .CardFooter {
+        width: $custom_width_tablet;
+    }
+  
+}
+
+@media (min-width: $breakpoint_tablet) and (max-width: $breakpoint_laptop) {
+
+    .CardName {
+        width: $custom_width_laptop;
+    }
+    
+    .CardImg {
+        width: $custom_width_laptop;
+    }
+    
+    .CardInfo {
+        width: $custom_width_laptop;
+    }
+    
+    .CardFooter {
+        width: $custom_width_laptop;
+    }
+  
+}
+
+@media (min-width: $breakpoint_laptop) and (max-width: $breakpoint_laptopL) {
+
+    .CardName {
+        width: $custom_width_laptopL;
+    }
+    
+    .CardImg {
+        width: $custom_width_laptopL;
+    }
+    
+    .CardInfo {
+        width: $custom_width_laptopL;
+    }
+    
+    .CardFooter {
+        width: $custom_width_laptopL;
+    }
+  
+}

@@ -1,0 +1,61 @@
+@import "../../../scss/variables.scss";
+
+// variables
+$center: center;
+$none: none;
+
+.MainPage {
+  background: #8e9eab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8e9eab, #eef2f3); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8e9eab, #eef2f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100%;
+  transition: all ease 0.5s;
+}
+
+.SearchCont {
+  display: flex;
+  justify-content: $center;
+  align-items: $center;
+  padding: 3rem 1rem;
+}
+
+.InputStyle {
+  margin-right: 0.5rem;
+  padding: 0.2rem;
+  border: $none;
+  border-radius: 0.5rem;
+  height: 2rem;
+  font-size: medium;
+  outline: $none;
+}
+
+.ButtonStyle {
+  padding: 0.2rem;
+  border: $none;
+  border-radius: 0.5rem;
+  height: 2.4rem;
+  font-size: medium;
+  width: 5rem;
+  cursor: pointer;
+}
+
+.ButtonStyle:hover {
+  background: rgb(167, 166, 166);
+  transition: all ease 0.5s;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  font-weight: 500;
+}
+
+
+//media query
+@media (max-width: $breakpoint_tablet) {
+
+  .MainPage {
+    width: 100% !important;
+  }
+
+}

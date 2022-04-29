@@ -1,0 +1,59 @@
+@import "../../../scss/variables.scss";
+
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    background: white;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem
+}
+
+.img {
+    width: 10%;
+}
+
+.menuIcon {
+    width: fit-content !important;
+    font-size: 2.5rem !important;
+    cursor: pointer;
+}
+
+//media query
+@media (max-width: $breakpoint_mobileM) {
+
+    .img {
+        width: 50%;
+    }
+  
+}
+
+@media (min-width: $breakpoint_mobileM) and (max-width: $breakpoint_mobileL) {
+
+    .img {
+        width: 45%;
+    }
+  
+}
+
+@media (min-width: $breakpoint_mobileL) and (max-width: $breakpoint_tablet) {
+
+    .img {
+        width: 28%;
+    }
+  
+}
+
+@media (min-width: $breakpoint_tablet) and (max-width: $breakpoint_laptop) {
+
+    .img {
+        width: 20%;
+    }
+  
+}
+

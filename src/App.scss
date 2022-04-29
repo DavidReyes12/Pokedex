@@ -1,0 +1,23 @@
+@import "./scss/variables.scss";
+
+//variables
+$custom_height: calc(100% - 5rem);
+
+// styles
+.App {
+    height: 100%;
+}
+
+.Container {
+    height: $custom_height;
+    display: flex;
+}
+
+//media query
+@media (max-width: $breakpoint_tablet) {
+
+    .Container {
+        display: contents;
+    }
+  
+}
